@@ -88,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         MenuInflater inflater = getMenuInflater();
+        alumnos = dm.createListAlumnos();
+        adapterList = new AlumnoAdapterList(alumnos, getApplicationContext());
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
         menu.setHeaderTitle(adapterList.getItem(info.position).getNombre());
         inflater.inflate(R.menu.context_menu, menu);
