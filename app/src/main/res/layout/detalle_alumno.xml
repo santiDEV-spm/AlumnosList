@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Santiago Perez Moncada"
+            android:textSize="25sp"
+            android:textColor="@color/teal_700"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:padding="5dp"/>
+
+        <View
+            android:background="#A2A0A5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_carrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ing. TICS"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/txt_matricula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TI18110900"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_cerrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                app:fabSize="normal"
+                android:elevation="10dp"
+                android:src="@drawable/ic_baseline_clear_24"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -77,7 +77,9 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 alumnos = dm.createListAlumnos();
                 Alumno current = alumnos.get(i);
-                Toast.makeText(getApplicationContext(), current.getNombre(), Toast.LENGTH_SHORT).show();
+                VerAlumnoDialog verAlumnoDialog = new VerAlumnoDialog();
+                verAlumnoDialog.setAlumno(current);
+                verAlumnoDialog.show(getFragmentManager(), "Ver Alumno");
             }
         });
     }
